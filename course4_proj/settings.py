@@ -33,6 +33,7 @@ class Dev(Configuration):
         [
             "localhost",
             "0.0.0.0",
+            "127.0.0.1",
             str(os.environ.get("CODIO_HOSTNAME")) + "-8000.codio.io",
         ]
     )
@@ -55,6 +56,7 @@ class Dev(Configuration):
         "django.contrib.messages",
         "django.contrib.staticfiles",
         "movies",
+        "gh",
     ]
 
     MIDDLEWARE = [
